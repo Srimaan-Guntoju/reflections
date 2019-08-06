@@ -1,0 +1,20 @@
+Git course notes:
+- Well, my first notes in nano. pretty excited.
+-------------------------
+- finding differences b/w two files can be tedious.
+- diff command helps to make it easier
+- WHy? because it only displays the difference b/w the two files to start with and show only those lines where there is a difference.
+- having access to whole history of changes can help in comparing the changes over time.
+- Git forces you to manually commit each specific change. It gives the power to the user to choose which change needs to be versioned but it puts the whole onus on the user to decide which change needs to be commited unlike google docs.
+- Code versioning requires that multiple files could be changed at once. Hence it is required version control tracks changes of all the files for each commit. This set of files are called repository.
+- Major tools of git seems like you use the log command to view list of commits that are made and diff to view specific changes made b/w two logs.
+-----------------------------
+Major commands that have been used till now are:
+- git commit
+- git checkout-> to activate a specific commit
+- git log (-stats)-> list of commits
+- git diff-> to view teh changes b/w two specific commits
+- git clone url
+-----------------------------
+In order to narrow down and find the bug is to find the last commit where the bug was not existing.
+From there keep checking out all the subsequent commits till find the non-buggy commit.

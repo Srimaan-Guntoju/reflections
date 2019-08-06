@@ -1,0 +1,36 @@
+Git lesson 2
+- Git does not track any of the directories by itself by default.
+- For whatever the directories that we need to track the changes, we need to go to that directory by git init and then run "git init"
+- Even after this git doesn't start tracking the changes. If you run git status, you will see that the files are not tracked. This is because git doesn't know if it must track all the files.
+- Git uses something called staging area to enable the users to commit only those files which are required.
+- In order to commit the files, they need to be added to git staging area by git add.
+- Once files are added to git staging, we can use commit to add the changes.
+---------------
+Git branches:
+- when we want to make some experimental changes but not to the main branch(Master), then we can 
+  create a new branch which is a replica of master.
+- We can make a ll the changes we like in this new branch.
+- Git commits have a parent except for the first commit
+- if two commits are part of same chain, then they are reachable
+- if two commits are part of two different branches, they may not be reachable
+- if a commit is checked out, its changes may not be saved untill a new branch is created.
+-------------
+Commands:
+- git add -> adds the files to staged area
+- git diff -> show diff b/w staged area files and working directory
+- git diff --staged -> show diff b/w last commit and staged area
+- git branch -> show list of branches
+	- Branch is a new commits with labels. These labels make it easier to switch between the 
+	commits. 
+- git checkout -> to activate a specific commit or a branch
+- git checkout -b new-branch -> it creates a new branch and checkout 
+	- if we activate a commit which cannot be accessed from any of the branches, we can use
+	  this command to create a new branch.
+- git merge master coins
+	- Process of combining a branch with Master is called merging.
+- git show commit_id-> shows the diff of the commit from its parent as we cant use diff in merged 
+  master.  
+- git branch -d coins -> to delete the branch name(i.e the tag added to a commit) after the said 
+  branch is merged with master
+	- Why do we delete the branch after merge? because the commits in a branch can now be 
+	  accessed from the master so no need of the branch.
