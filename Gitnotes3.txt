@@ -1,0 +1,4 @@
+- In order to push the local repository to remote, we first need to create a repo in github.
+- Once the repo is created, we need to create a remote in our local repo which will be synced.
+- After creation of remote, we use 'git push local-remote-name branch-to-be-pushed'
+- use git push to push the local repository to github.
